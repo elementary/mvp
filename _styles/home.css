@@ -3,6 +3,18 @@
 * This file is part of elementary.io *
 *************************************/
 
+:root {
+    --blueberry-500: #3689e6;
+
+    --silver-100: #fafafa;
+    --silver-300: #d4d4d4;
+    --silver-500: #abacae;
+    --silver-900: #555761;
+
+    --black-500: #333;
+    --black-700: #1a1a1a;
+}
+
 /******************
 * Responsive Hero *
 ******************/
@@ -91,11 +103,17 @@ input:focus + .focus-reveal {
 }
 
 #the-press svg * {
-    fill: #555761;
+    fill: var(--silver-900);
+}
+
+@media (prefers-color-scheme: dark) {
+    #the-press svg * {
+        fill: var(--silver-500);
+    }
 }
 
 #the-press svg:hover * {
-    fill: #3689e6;
+    fill: var(--blueberry-500);
 }
 
 #the-press svg:active {
@@ -738,8 +756,8 @@ input:focus + .focus-reveal {
 
 #slingshot .app-display__description svg,
 #slingshot .app-display__description svg * {
-    color: #000 !important;
-    fill: #000 !important;
+    color: inherit;
+    fill: inherit;
 }
 
 #slingshot .app-display__description p {
@@ -1178,8 +1196,8 @@ span.results-title {
 
 #parental-controls .app-display__description svg,
 #parental-controls .app-display__description svg * {
-    color: #000 !important;
-    fill: #000 !important;
+    color: inherit;
+    fill: inherit;
 }
 
 /************

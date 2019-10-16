@@ -31,8 +31,8 @@
             </div>
 
             <div class="section__showcase">
-                <img class="bg" src="images/home/notebook.jpg" alt="Generic laptop computer" />
-                <img src="images/screenshots/desktop.jpg" alt="elementary OS 5 Juno desktop" />
+                <img class="bg" src="images/home/notebook.png" alt="Generic laptop computer" />
+                <img src="images/screenshots/desktop.png" alt="elementary OS 5 Juno desktop" />
             </div>
 
             <div class="section__detail grid">
@@ -462,7 +462,7 @@
         </section>
         <section id="shortcuts">
             <div class="app-display app-display--horizontal">
-                <img class="app-display__image" src="images/screenshots/shortcut-overlay.jpg" srcset="images/screenshots/shortcut-overlay@2x.jpg 2x" alt="elementary OS Keyboard Shortcuts"/>
+                <img class="app-display__image" src="images/screenshots/shortcut-overlay.png" srcset="images/screenshots/shortcut-overlay@2x.png 2x" alt="elementary OS Keyboard Shortcuts"/>
                 <div class="app-display__description">
                     <h2>User Friendly. And Keyboard Friendly.</h2>
                     <p>elementary OS is designed to be easy to understand and pick up as a new user. But that doesn’t mean it’s dumbed down; powerful, customizable keyboard shortcuts ensure you’ll stay productive whether it’s your first day or your thousandth.</p>

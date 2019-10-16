@@ -7,6 +7,14 @@
     max-width: 100%;
 }
 
+.page-brand img {
+    background-color: white;
+}
+
+.page-brand img#logomark {
+    padding: 2em;
+}
+
 .page-brand .hex {
     font-family: "Roboto Mono", monospace;
     font-size: 12px;

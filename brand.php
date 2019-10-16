@@ -37,7 +37,7 @@
     </ul>
 
     <h3>Logomark</h3>
-    <img src="<?php echo $sitewide['root'];?>images/brand/logomark.png" alt="elementary Logomark"/>
+    <img id="logomark" src="<?php echo $sitewide['root'];?>images/brand/logomark.png" alt="elementary Logomark"/>
     <p>The "e" logomark is to be used to refer to elementary the company when space is constrained or a square ratio is required.</p>
 
     <h2>Color</h2>

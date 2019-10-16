@@ -174,32 +174,32 @@
         </div>
     </div>
     <div class="donation-grid">
-        <a href="https://salt.bountysource.com/teams/bountysource" title="Bountysource">
-            <img class="oss-logo" src="images/open-source/bountysource.svg" alt="Bountysource" />
+        <a class="oss-logo" href="https://salt.bountysource.com/teams/bountysource" title="Bountysource">
+            <?php include __DIR__.'/images/open-source/bountysource.svg'; ?>
         </a>
-        <a href="https://www.debian.org/donations" title="Debian">
-            <img class="oss-logo" src="images/open-source/debian.svg" alt="Debian" />
+        <a class="oss-logo" href="https://www.debian.org/donations" title="Debian">
+            <?php include __DIR__.'/images/open-source/debian.svg'; ?>
         </a>
-        <a href="https://fontawesome.com/" title="Font Awesome">
-            <img class="oss-logo" src="images/open-source/fontawesome.svg" alt="Font Awesome" />
+        <a class="oss-logo" href="https://fontawesome.com/" title="Font Awesome">
+            <?php include __DIR__.'/images/open-source/fontawesome.svg'; ?>
         </a>
-        <a href="https://inkscape.org/support-us/donate/" title="Inkscape">
-            <img class="oss-logo" src="images/open-source/inkscape.svg" alt="Inkscape" />
+        <a class="oss-logo" href="https://inkscape.org/support-us/donate/" title="Inkscape">
+            <?php include __DIR__.'/images/open-source/inkscape.svg'; ?>
         </a>
-        <a href="https://letsencrypt.org/donate/" title="Let’s Encrypt">
-            <img class="oss-logo" src="images/open-source/letsencrypt.svg" alt="Let’s Encrypt" />
+        <a class="oss-logo" href="https://letsencrypt.org/donate/" title="Let’s Encrypt">
+            <?php include __DIR__.'/images/open-source/letsencrypt.svg'; ?>
         </a>
-        <a href="https://wiki.osmfoundation.org/wiki/Donate" title="OpenStreetMap">
-            <img class="oss-logo" src="images/open-source/osm.svg" alt="OpenStreetMap" />
+        <a class="oss-logo" href="https://wiki.osmfoundation.org/wiki/Donate" title="OpenStreetMap">
+            <?php include __DIR__.'/images/open-source/osm.svg'; ?>
         </a>
-        <a href="https://www.rodsbooks.com/refind/" title="rEFInd">
-            <img class="oss-logo" src="images/open-source/refind.svg" alt="rEFInd" />
+        <a class="oss-logo" href="https://www.rodsbooks.com/refind/" title="rEFInd">
+            <?php include __DIR__.'/images/open-source/refind.svg'; ?>
         </a>
-        <a href="https://sfconservancy.org/donate/" title="Software Freedom Conservancy">
-            <img class="oss-logo" src="images/open-source/sfc.svg" alt="Software Freedom Conservancy" />
+        <a class="oss-logo" href="https://sfconservancy.org/donate/" title="Software Freedom Conservancy">
+            <?php include __DIR__.'/images/open-source/sfc.svg'; ?>
         </a>
-        <a href="https://weblate.org/en/donate/" title="Weblate">
-            <img class="oss-logo" src="images/open-source/weblate.svg" alt="Weblate" />
+        <a class="oss-logo" href="https://weblate.org/en/donate/" title="Weblate">
+            <?php include __DIR__.'/images/open-source/weblate.svg'; ?>
         </a>
     </div>
 </div>

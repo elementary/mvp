@@ -3,6 +3,20 @@
 * This file is part of elementary.io *
 *************************************/
 
+:root {
+    color-scheme: light dark;
+
+    --blueberry-500: #3689e6;
+
+    --silver-100: #fafafa;
+    --silver-300: #d4d4d4;
+    --silver-500: #abacae;
+    --silver-900: #555761;
+
+    --black-500: #333;
+    --black-700: #1a1a1a;
+}
+
 @font-face {
     font-family: 'Raleway';
     src:
@@ -24,8 +38,8 @@ html,
 body {
     background-color: #fff;
     box-sizing: border-box;
-    color: #333;
-    fill: #333;
+    color: var(--black-500);
+    fill: var(--black-500);
     font-family: "Open Sans", Helvetica, sans-serif;
     font-weight: 400;
     margin: 0;
@@ -34,6 +48,15 @@ body {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-color-scheme: dark) {
+  html,
+  body {
+    background-color: var(--black-700);
+    color: var(--silver-300);
+    fill: var(--silver-300);
+  }
 }
 
 *,
@@ -47,9 +70,16 @@ body {
 **************/
 
 a {
-    color: #08c;
-    fill: #08c;
+    color: var(--blueberry-500);
+    fill: var(--blueberry-500);
     text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  a {
+    color: #64baff;
+    fill: #64baff;
+  }
 }
 
 a:focus {
@@ -143,7 +173,7 @@ q::after {
 }
 
 hr {
-    background: #c9c9c9;
+    background: var(--silver-300);
     border: none;
     height: 1px;
 }
@@ -170,7 +200,7 @@ img.inline + div.inline {
 }
 
 .img--cutoff-bottom::after {
-    background: linear-gradient(to right, transparent 0%, #c9c9c9 10%, #c9c9c9 90%, transparent 100%);
+    background: linear-gradient(to right, transparent 0%, var(--silver-300) 10%, var(--silver-300) 90%, transparent 100%);
     content: "";
     display: block;
     height: 1px;
@@ -183,7 +213,7 @@ img.inline + div.inline {
 
 .inline-tweet:focus,
 .inline-tweet:hover {
-    color: #08c;
+    color: var(--blueberry-500);
     text-decoration: none;
 }
 
@@ -290,8 +320,8 @@ nav a:visited {
 }
 
 nav a:focus {
-    color: #08c;
-    fill: #08c;
+    color: var(--blueberry-500);
+    fill: var(--blueberry-500);
     text-decoration: none;
 }
 
@@ -448,8 +478,8 @@ footer i.fa {
 }
 
 footer a:focus i.fa {
-    color: #08c;
-    text-shadow: 0 1px 6px #08c;
+    color: var(--blueberry-500);
+    text-shadow: 0 1px 6px var(--blueberry-500);
 }
 
 footer ul li a:focus {
@@ -588,8 +618,8 @@ a.third {
 }
 
 a.third:hover {
-    color: #08c;
-    fill: #08c;
+    color: var(--blueberry-500);
+    fill: var(--blueberry-500);
 }
 
 .third .fa,
@@ -682,7 +712,7 @@ a.third:hover {
 }
 
 .row.alert {
-    border: 2px solid #333;
+    border: 2px solid var(--black-500);
     border-radius: 6px;
     max-width: 704px;
     padding: 24px;
@@ -749,7 +779,7 @@ select,
         inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
         inset 0 -1px 0 0 rgba(255, 255, 255, 0.15),
         0 1px 0 0 rgba(255, 255, 255, 0.15);
-    color: #333;
+    color: inherit;
     cursor: pointer;
     font-family: inherit;
     font-size: 16px;
@@ -835,8 +865,8 @@ button.suggested-action,
 .light .button.flat.active .svg {
     background-color: #fff;
     box-shadow: none;
-    color: #333;
-    fill: #333;
+    color: var(--black-500);
+    fill: var(--black-500);
 }
 
 .button.flat:hover {
@@ -860,6 +890,11 @@ button.suggested-action,
     right: 0;
     top: 0;
     width: 100%;
+}
+
+#logotype svg * {
+    color: inherit;
+    fill: inherit;
 }
 
 .small-button {
@@ -896,7 +931,7 @@ button.suggested-action,
 input:not([type="submit"]):not(.button) {
     background-clip: padding-box;
     background-color: #fff;
-    background-image: linear-gradient(to bottom, #fafafa, #fdfdfd);
+    background-image: linear-gradient(to bottom, var(--silver-100), #fdfdfd);
     border: 1px solid rgba(0, 0, 0, 0.22);
     border-radius: 3px;
     box-shadow:
@@ -952,7 +987,7 @@ select:focus:invalid {
 }
 
 .button::placeholder {
-    color: #333;
+    color: var(--black-500);
 }
 
 input:focus::placeholder {
@@ -1231,7 +1266,7 @@ i.fa.fa-close.close-modal {
     border: 1px solid rgba(0, 0, 0, 0.2);
     bottom: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    color: #333;
+    color: var(--black-500);
     left: -70px;
     opacity: 0;
     position: absolute;
@@ -1321,7 +1356,15 @@ i.fa.fa-close.close-modal {
 *****************/
 
 .grey {
-    background-color: #fafafa;
+    background-color: var(--silver-100);
+}
+
+@media (prefers-color-scheme: dark) {
+  .grey {
+    background-color: var(--black-500);
+    color: var(--silver-100);
+    fill: var(--silver-100);
+  }
 }
 
 /*****************

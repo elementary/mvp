@@ -81,11 +81,14 @@ section {
         0 5px 10px -2px rgba(235, 178, 41, 0.5);
 }
 
-#funding .third > img {
+#funding .third > img,
+#funding .third > svg {
+    height: 32px;
     margin: -4px; /* Fix some issue to match i.fa */
 }
 
-#funding .two-thirds > img {
+#funding .two-thirds > img,
+#funding .two-thirds > svg {
     height: 48px;
     margin: -12px;
 }

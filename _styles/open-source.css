@@ -3,12 +3,26 @@
 * This file is part of elementary.io *
 *************************************/
 
+:root {
+    color-scheme: light dark;
+
+    --blueberry-500: #3689e6;
+
+    --silver-100: #fafafa;
+    --silver-300: #d4d4d4;
+    --silver-500: #abacae;
+    --silver-900: #555761;
+
+    --black-500: #333;
+    --black-700: #1a1a1a;
+}
+
 /*******************
 * Open Source Page *
 ********************/
 
 .platform-item {
-    background-color: #f7f7f7;
+    background-color: rgba(150, 150, 150, 0.05);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 3px;
     display: inline-block;
@@ -23,19 +37,23 @@
 }
 
 .platform-item a:hover {
-    color: #08c;
+    color: var(--blueberry-500);
+}
+
+.platform-item .oss-logo {
+    padding: 0.5em;
 }
 
 hr.dotted {
     background: transparent;
-    border-top: 1px dashed #c9c9c9;
+    border-top: 1px dashed rgba(150, 150, 150, 0.5);
     height: 1px;
     margin: 16px 24px;
     margin-bottom: 4px;
     width: calc(100% - 44px);
 }
 
-.sub-item {
+a.sub-item {
     background-color: #fff;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.05));
     box-shadow:
@@ -44,6 +62,7 @@ hr.dotted {
         inset 0 -1px 0 0 rgba(255, 255, 255, 0.15),
         0 1px 2px 0 rgba(0, 0, 0, 0.15);
     font-size: 14px;
+    color: var(--black-700);
     font-weight: 600;
     margin: 3px;
     padding: 6px 12px;
@@ -58,6 +77,16 @@ hr.dotted {
 #xorg .sub-item {
     color: #fff;
     text-shadow: 0 1px rgba(0, 0, 0, 0.15);
+}
+
+#gnome .oss-logo,
+#xorg .oss-logo,
+#gnu .oss-logo,
+#linux .oss-logo {
+    background-color: var(--silver-100);
+    border-radius: 0.25em;
+    box-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.25);
+    transform: scale(0.8);
 }
 
 #fdo .sub-item {
@@ -108,7 +137,7 @@ hr.dotted {
 
 #linux .sub-item {
     background-color: #f9c440;
-    color: inherit;
+    color: var(--black-700);
 }
 
 #linux .sub-item:focus {
@@ -152,10 +181,26 @@ hr.dotted {
     opacity: 0.8;
 }
 
-.donation-grid .oss-logo {
+.donation-grid .oss-logo svg {
     height: 48px;
+    width: auto;
     opacity: 0.8;
     transition: opacity 250ms ease-in-out;
+}
+
+.donation-grid a.oss-logo {
+    color: inherit;
+    fill: inherit;
+}
+
+.donation-grid a.oss-logo:hover {
+    color: var(--blueberry-500);
+    fill: var(--blueberry-500);
+}
+
+.donation-grid a.oss-logo * {
+    color: inherit;
+    fill: inherit;
 }
 
 .donation-grid .oss-logo:hover {
