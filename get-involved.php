@@ -62,7 +62,7 @@
             <a class="button flat suggested-action" href="https://github.com/sponsors/elementary" target="_blank" rel="noopener">Sponsor on GitHub</a>
         </div>
         <div class="half">
-            <img class="logo" alt="Patreon" title="Patreon" src="images/get-involved/patreon.svg">
+            <?php include __DIR__.'/images/get-involved/patreon.svg'; ?>
             <p>Patreon works like an ongoing crowdfunding campaign. Choose an amount to contribute each month to help us reach our goals. Plus, earn exclusive rewards and read exclusive content early.</p>
             <a class="button flat" href="https://www.patreon.com/elementary" target="_blank" rel="noopener">Back on Patreon</a>
         </div>

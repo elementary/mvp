@@ -175,66 +175,68 @@
 * Dark color windows *
 *********************/
 
-.pantheon .dark.window {
-    background-color: #363b3e;
-    border-color: #141414;
-    color: #c0c6c4;
-    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-}
+@media (prefers-color-scheme: dark) {
+    .pantheon .window {
+        background-color: #363b3e;
+        border-color: #141414;
+        color: #c0c6c4;
+        text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+    }
 
-.pantheon .dark.window .titlebar {
-    background: linear-gradient(to bottom, #3a4144, #323739);
-    border-bottom: 1px solid #222426;
-    color: #89908f;
-    fill: #89908f;
-}
+    .pantheon .window .titlebar {
+        background: linear-gradient(to bottom, #3a4144, #323739);
+        border-bottom: 1px solid #222426;
+        color: #89908f;
+        fill: #89908f;
+    }
 
-.pantheon .dark.window .titlebar .icon {
-    filter: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.3));
-}
+    .pantheon .window .titlebar .icon {
+        filter: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.3));
+    }
 
-.pantheon .dark.window .titlebar button:not(.control):active {
-    background-color: #4c585e;
-}
+    .pantheon .window .titlebar button:not(.control):active {
+        background-color: #4c585e;
+    }
 
-.pantheon .dark.window.active .titlebar {
-    color: #acb3b1;
-    fill: #acb3b1;
-}
+    .pantheon .window.active .titlebar {
+        color: #acb3b1;
+        fill: #acb3b1;
+    }
 
-.pantheon .dark.window .tabbar {
-    background: linear-gradient(to bottom, #2f3436, #323639);
-    border-bottom: 1px solid #222426;
-    box-shadow: 0 2px 2px rgba(51, 51, 51, 0.3) inset;
-    fill: #595959;
-    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-}
+    .pantheon .window .tabbar {
+        background: linear-gradient(to bottom, #2f3436, #323639);
+        border-bottom: 1px solid #222426;
+        box-shadow: 0 2px 2px rgba(51, 51, 51, 0.3) inset;
+        fill: #595959;
+        text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+    }
 
-.pantheon .dark.window .tabbar button:active:not(:disabled) {
-    background-color: rgba(200, 200, 200, 0.15);
-}
+    .pantheon .window .tabbar button:active:not(:disabled) {
+        background-color: rgba(200, 200, 200, 0.15);
+    }
 
-.pantheon .dark.window .tabbar .tab {
-    opacity: 0.8;
-}
+    .pantheon .window .tabbar .tab {
+        opacity: 0.8;
+    }
 
-.pantheon .dark.window .tabbar .tab.active {
-    background: linear-gradient(to bottom, #323639, #303436);
-    border-color: #1f2122;
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.02), inset 0 1px 0 0 rgba(255, 255, 255, 0.02);
-    opacity: 1;
-}
+    .pantheon .window .tabbar .tab.active {
+        background: linear-gradient(to bottom, #323639, #303436);
+        border-color: #1f2122;
+        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.02), inset 0 1px 0 0 rgba(255, 255, 255, 0.02);
+        opacity: 1;
+    }
 
-.pantheon .dark.window .tabbar .tab:not(.active):not(:hover) .icon[icon='actions/close'] {
-    fill: transparent;
-}
+    .pantheon .window .tabbar .tab:not(.active):not(:hover) .icon[icon='actions/close'] {
+        fill: transparent;
+    }
 
-.pantheon .dark.window .tabbar .icon {
-    filter: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.3));
-}
+    .pantheon .window .tabbar .icon {
+        filter: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.3));
+    }
 
-.pantheon .dark.window .tabbar .icon:not([icon="actions/document-open-recent"]) {
-    fill: #808885;
+    .pantheon .window .tabbar .icon:not([icon="actions/document-open-recent"]) {
+        fill: #808885;
+    }
 }
 
 /*******************************
