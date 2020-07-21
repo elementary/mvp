@@ -14,8 +14,11 @@ import svgo from 'gulp-svgo'
 import postcss from 'gulp-postcss'
 import cssnext from 'postcss-cssnext'
 
+import path from 'path'
+import through from 'through2'
 import webpack from 'webpack'
 import webpackConfig from './webpack.config.babel.js'
+import fs from 'fs'
 
 const browsers = [
     'last 4 version',
@@ -193,14 +196,44 @@ gulp.task('images', gulp.parallel('store', 'png', 'jpg', 'svg', 'gif'))
 gulp.task('styles', () => {
     const base = '_styles'
     const src = ['_styles/**/*.css']
-    const dest = 'styles'
+    const dest = 'styles/'
+
+    // Make sure the styles folder exists and start writing the manfiest file
+    try {
+        fs.statSync('styles/')
+    } catch (err) {
+        fs.mkdirSync('styles/')
+    }
+
+    // let createManifest = fs.createReadStream('styles/manifest.json')
+    let manifestFile = fs.createWriteStream('styles/manifest.json')
+    // createManifest.pipe(manifestFile)
+    manifestFile.write('{\n')
+    manifestFile.cork()
 
     return gulp.src(src, { base })
-    .pipe(changed(dest))
-    .pipe(postcss([
-        cssnext({ browsers })
-    ]))
-    .pipe(gulp.dest(dest))
+        .pipe(changed(dest))
+        .pipe(postcss([
+            cssnext({ browsers })
+        ]))
+        .pipe(through.obj((file, enc, next) => {
+            const {dir, name, ext} = path.parse(file.relative)
+            // Simple cache busting! Adds the date time to the CSS to ensure unique versions of CSS files
+            file.path = path.join(dest, dir, `${name}.${new Date().getTime().toString()}${ext}`)
+            // Write chunk to manifest file
+            manifestFile.write(`  "styles/${name}": "${file.path}",\n`)
+            next(null, file)
+        }, (done) => {
+            // finishing out the manifest file, flushing through stream
+            // If we leave the dangling comma PHP will get confused and can't parse the JSON so remove it here
+            let lastChunk = manifestFile._writableState.lastBufferedRequest.chunk
+            let fixedChunk = lastChunk.subarray(0, lastChunk.length - 2) // removes the newline AND comma
+            manifestFile._writableState.lastBufferedRequest.chunk = fixedChunk
+            manifestFile.uncork() // allow all the data we've added to the corked stream to be written
+            manifestFile.end('\n}\n') // add back the extra newline we removed
+            done()
+        }))
+        .pipe(gulp.dest(dest))
 })
 
 /**

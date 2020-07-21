@@ -28,6 +28,9 @@ if (!isset($page['styles'])) $page['styles'] = array();
 if (!isset($page['script-plugins'])) $page['script-plugins'] = array();
 if (!isset($page['scripts'])) $page['scripts'] = array();
 
+$stylesManifest = json_decode(file_get_contents('styles/manifest.json'), true);
+$scriptsManifest = json_decode(file_get_contents('scripts/manifest.json'), true);
+
 $l10n->init();
 $l10n->set_domain('layout');
 $l10n->begin_html_translation();
@@ -77,15 +80,15 @@ $l10n->begin_html_translation();
         <?php } ?>
 
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-vlOMx0hKjUCl4WzuhIhSNZSm2yQCaf0mOU1hEDK/iztH3gU4v5NMmJln9273A6Jz" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" media="all" href="styles/main.css">
+        <link rel="stylesheet" type="text/css" media="all" href="<?php echo $stylesManifest["styles/main"] ?>">
 
         <?php foreach ($page['styles'] as $style) { ?>
-        <link rel="stylesheet" type="text/css" media="all" href="<?php echo $style ?>">
+        <link rel="stylesheet" type="text/css" media="all" href="<?php echo $stylesManifest[$style] ?>">
         <?php } ?>
 
         <?php if (!isset($scriptless) || $scriptless === false) { ?>
-        <script src="scripts/common.js"></script>
-        <script src="scripts/main.js" async></script>
+        <script src=<?php echo $scriptsManifest["scripts/common.js"]?>></script>
+        <script src=<?php echo $scriptsManifest["scripts/main.js"]?> async></script>
         <script async defer data-domain="elementary.io" src="https://stats.elementary.io/js/index.js"></script>
         <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script> 
 
@@ -106,7 +109,7 @@ $l10n->begin_html_translation();
                     }
                 }
         ?>
-        <script src="<?php echo $src ?>"<?php echo $atr_string ?>></script>
+        <script src="<?php echo $scriptsManifest[$src] ?>"<?php echo $atr_string ?>></script>
         <?php } ?>
         <?php } ?>
     </head>

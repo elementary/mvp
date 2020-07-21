@@ -11,6 +11,8 @@ import path from 'path'
 
 import glob from 'glob'
 import webpack from 'webpack'
+import ManifestPlugin from 'webpack-manifest-plugin'
+import TerserPlugin from 'terser-webpack-plugin'
 
 const scriptPattern = path.resolve('_scripts', 'pages', '**', '*.js')
 
@@ -54,11 +56,11 @@ export default {
     devtool: 'source-map',
     entry: scriptFiles,
     output: {
-        filename: '[name].js',
+        filename: '[name].[chunkhash].js',
         path: path.resolve(__dirname, 'scripts'),
-        publicPath: '/scripts',
-        sourceMapFilename: '[name].map.js'
+        publicPath: 'scripts/'
     },
+    mode: 'none',
     module: {
         rules: [{
             test: /\.js$/,
@@ -72,32 +74,43 @@ export default {
             }
         }]
     },
+    optimization: {
+        splitChunks: {
+            cacheGroups: {
+                common: {
+                    minChunks: 2,
+                    chunks: 'initial',
+                    name: 'common'
+                }
+            }
+        },
+        minimizer: [
+            new TerserPlugin({
+                terserOptions: {
+                    compress: true,
+                    mangle: false,
+                    output: {
+                        comments: false
+                    },
+                    sourceMap: true
+                }
+            })
+        ]
+    },
     resolve: {
         alias: {
             '~': path.resolve(__dirname, '_scripts')
         }
     },
     plugins: [
-        new webpack.optimize.CommonsChunkPlugin({
-            name: 'common',
-            minChunks: 2
-        }),
-        new webpack.optimize.UglifyJsPlugin({
-            minimize: true,
-            sourceMap: true,
-            mangle: false,
-            compressor: {
-                warnings: false,
-                screw_ie8: true
-            },
-            output: {
-                comments: false
-            }
-        }),
         new webpack.DefinePlugin({
             'process.env': {
                 'NODE_ENV': JSON.stringify('production')
             }
+        }),
+
+        new ManifestPlugin({
+            basePath: 'scripts/'
         })
     ],
     stats
