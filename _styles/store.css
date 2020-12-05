@@ -1,7 +1,7 @@
-/*************************************
-* Copyright 2016 elementary LLC.     *
-* This file is part of elementary.io *
-*************************************/
+/***************************************
+* Copyright 2016–2020 elementary, Inc. *
+* This file is part of elementary.io   *
+***************************************/
 
 .fa-128.fa-shopping-cart {
     color: #e0e0e0;
@@ -9,15 +9,35 @@
     margin: 24px;
 }
 
-/**********************************
-* Hardware partners and retailers *
-**********************************/
+/*********************************
+* Hardware devices and retailers *
+*********************************/
 
-#devices * {
-    text-align: center;
+#devices h4,
+#devices p {
+    text-align: left;
 }
 
 #devices h4 {
+    margin-bottom: 0;
+}
+
+#devices .device {
+    padding: 1em;
+}
+
+#devices .button {
+    padding: 8px 24px;
+}
+
+#devices .price {
+    display: block;
+    font-size: smaller;
+    font-weight: 600;
+    text-align: left;
+}
+
+#retailers h4 {
     border-bottom: 3px solid #08c;
     font-size: 1.25em;
     font-weight: 900;
@@ -26,12 +46,16 @@
     text-align: left;
 }
 
-#devices ul {
+#retailers p {
+    text-align: center;
+}
+
+#retailers ul {
     margin: 0;
     padding: 0;
 }
 
-#devices li {
+#retailers li {
     line-height: 1.25;
     list-style: none;
     margin: 0.75em 0;

@@ -69,40 +69,50 @@
 </section>
 
 <section class="grid" id="devices">
-    <div class="two-thirds">
-        <h3>Devices</h3>
-        <p>Hardware devices with elementary OS can be purchased from the following retailers. Purchasing from these companies helps support elementary OS.</p>
+    <div class="third device">
+        <img src="/images/store/devices/star-labtop-mk-iv.png" />
+        <h4><strong>Star LabTop Mk IV</strong> by Star Labs</h4>
+        <span class="price">From $791</span>
+        <p>Thin, light, and powerful. Incredible multi-touch glass trackpad. 13.3&Prime; ARC display for vivid color without glare. <a href="https://starlabs.systems/pages/labtop-mk-iv?rfsn=4227837.e8f025" class="read-more">Learn More</a></p>
+        <a href="https://starlabs.systems/products/labtop-mk-iv?rfsn=4227837.e8f025" class="button suggested-action">Buy Now</a>
     </div>
 
-    <div class="grid">
-        <div class="third">
-            <h4><a class="read-more" href="https://laptopwithlinux.com/?ref=36&utm_source=referral&utm_medium=elementary&utm_campaign=elementary" target="_blank" title="Visit Laptop With Linux">Laptop With Linux</a></h4>
-            <ul>
-                <li>Laptops, mini desktops</li>
-                <li>Based in the Netherlands</li>
-                <li>Free shipping within EU</li>
-            </ul>
+    <div class="grid" id="retailers">
+        <div class="two-thirds">
+            <h3>Retailers</h3>
+            <p>Hardware that comes with elementary OS can also be purchased from the following retailers.</p>
         </div>
-        <div class="third">
-            <h4><a class="read-more" href="https://slimbook.es?utm_source=referral&utm_medium=elementary&utm_campaign=elementary" target="_blank" title="Visit Slimbook">Slimbook</a></h4>
-            <ul>
-                <li>Laptops, desktops, mini desktops, all-in-ones</li>
-                <li>Based in Spain</li>
-                <li>International shipping</li>
-            </ul>
-        </div>
-        <div class="third">
-            <h4><a class="read-more" href="https://starlabs.systems/?rfsn=4227837.e8f025" target="_blank" title="Visit Star Labs">Star Labs</a></h4>
-            <ul>
-                <li>Laptops</li>
-                <li>Based in the United Kingdom</li>
-                <li>International shipping</li>
-            </ul>
-        </div>
-    </div>
 
-    <div class="two-thirds">
-        <p><small>Hardware and software support for these devices are provided by the retailer.</small></p>
+        <div class="grid">
+            <div class="third">
+                <h4><a class="read-more" href="https://laptopwithlinux.com/?ref=36&utm_source=referral&utm_medium=elementary&utm_campaign=elementary" target="_blank" title="Visit Laptop With Linux">Laptop With Linux</a></h4>
+                <ul>
+                    <li>Laptops, mini desktops</li>
+                    <li>Based in the Netherlands</li>
+                    <li>Free shipping within EU</li>
+                </ul>
+            </div>
+            <div class="third">
+                <h4><a class="read-more" href="https://slimbook.es?utm_source=referral&utm_medium=elementary&utm_campaign=elementary" target="_blank" title="Visit Slimbook">Slimbook</a></h4>
+                <ul>
+                    <li>Laptops, desktops, mini desktops, all-in-ones</li>
+                    <li>Based in Spain</li>
+                    <li>International shipping</li>
+                </ul>
+            </div>
+            <div class="third">
+                <h4><a class="read-more" href="https://starlabs.systems/?rfsn=4227837.e8f025" target="_blank" title="Visit Star Labs">Star Labs</a></h4>
+                <ul>
+                    <li>Laptops</li>
+                    <li>Based in the United Kingdom</li>
+                    <li>International shipping</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="two-thirds">
+            <p><small>Hardware and software support for these devices are provided by the retailer.</small></p>
+        </div>
     </div>
 </section>
 
@@ -189,7 +199,7 @@
 
 <section class="grid">
     <div class="two-thirds">
-        <h2>Worldwide Shipping</h2>
+        <h3>Worldwide Shipping</h3>
         <p>We ship apparel and accessories all around the world! Orders are made on-demand typically within 2–7 days and will be shipped with the method you choose at checkout. <?php if (event_active('covid-19')) { ?><?php echo $config['covid_estimate'] ?><?php } ?></p>
 
         <p><small>Crimea, Cuba, Iran, Syria, and North Korea excluded. Shipping methods, prices, and times vary by country. Shipments outside of the USA may incur customs fees depending on the origin and destination countries.</small></p>
