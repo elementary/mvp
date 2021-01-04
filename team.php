@@ -29,7 +29,7 @@ include $template['header'];
 include $template['alert'];
 ?>
 
-<section class="grid">
+<section class="grid flex">
     <div class="two-thirds">
         <h1>Meet the Team</h1>
         <p>We believe in the unique combination of top-notch UX and the world-changing power of Open Source.</p>

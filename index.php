@@ -125,13 +125,13 @@
             </div>
         </section>
         <section id="workflow" class="grey">
-            <div class="grid">
+            <div class="grid flex">
                 <div class="two-thirds">
                     <h1>Get Work Done. Or Play.</h1>
                     <p>Stay productive and focused with Multitasking View, Picture-in-Picture, Do Not Disturb, and more. Or keep work out of sight when watching videos or playing games.</p>
                 </div>
             </div>
-            <div class="grid">
+            <div class="grid flex">
                 <div class="third">
                     <figure class="multitasking">
                         <div class="workspace"></div>
@@ -428,15 +428,15 @@
                 </div>
             </div>
         </section>
-        <section>
-            <div class="grid">
+        <section id="open-source">
+            <div class="grid flex">
                 <div class="two-thirds">
                     <h1>Everything We Do is Open&nbsp;Source</h1>
                     <p>Our platform itself is entirely open source, and it’s built upon a strong foundation of Free &amp; Open Source software (like GNU/Linux). Plus, we actively collaborate within the ecosystem to improve it for everyone.</p>
                     <a class="read-more" href="/open-source">Explore Our Stack</a>
                 </div>
             </div>
-            <div class="grid">
+            <div class="grid flex">
                 <div class="half">
                     <h2>Secure &amp; Privacy-respecting</h2>
                     <p>When source code is available to audit, anyone—a security researcher, a concerned user, or an OEM shipping the OS on their hardware—can verify that the software is secure and not collecting or leaking personal information.</p>
@@ -459,14 +459,17 @@
             </div>
         </section>
         <section id="privacy">
-            <div class="grid">
+            <div class="grid flex">
                 <div class="two-thirds">
-                    <h1>Privacy-respecting. Through and through.</h1>
+                    <h1>
+                        Privacy-respecting.<br />
+                        Through and through.
+                    </h1>
                     <p>Your data always belongs to you, and only you. We don’t make advertising deals or collect sensitive personal data. We’re funded directly by our users paying what they want for elementary OS and apps on AppCenter. And that’s how it should be.</p>
                     <a class="read-more" href="privacy">Our Privacy Policy</a>
                 </div>
             </div>
-            <div class="grid">
+            <div class="grid flex">
                 <div class="third">
                     <h4>
                         <?php include('images/icons/devices/symbolic/audio-input-microphone-symbolic.svg'); ?>

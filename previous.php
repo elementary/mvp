@@ -31,7 +31,7 @@
             </div>
         </div>
     </div>
-    <div class="grid">
+    <div class="grid flex">
         <div class="two-thirds">
             <h1>Thank You for Downloading elementary OS</h1>
             <div class="action-area">

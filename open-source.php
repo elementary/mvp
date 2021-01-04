@@ -11,7 +11,7 @@
     include $template['alert'];
 ?>
 
-<div class="grid">
+<div class="grid flex">
     <div class="two-thirds">
         <h1>Everything We Do is Open&nbsp;Source</h1>
         <p>The elementary OS platform is itself entirely open source, and it’s built upon a strong foundation of Free &amp; Open Source software. Plus, we actively collaborate within the ecosystem to improve it for everyone.</p>

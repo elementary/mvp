@@ -58,7 +58,7 @@
     }
 ?>
 
-<section class="grid">
+<section class="grid flex">
     <div class="two-thirds">
         <h1>
             Support Development.<br />
@@ -68,7 +68,7 @@
     </div>
 </section>
 
-<section class="grid" id="devices">
+<section class="grid flex" id="devices">
     <div class="two-thirds">
         <h3>Devices</h3>
         <p>Hardware devices with elementary OS can be purchased from the following retailers. Purchasing from these companies helps support elementary OS.</p>
@@ -187,7 +187,7 @@
 
 <?php } ?>
 
-<section class="grid">
+<section class="grid flex">
     <div class="two-thirds">
         <h2>Worldwide Shipping</h2>
         <p>We ship apparel and accessories all around the world! Orders are made on-demand typically within 2–7 days and will be shipped with the method you choose at checkout. <?php if (event_active('covid-19')) { ?><?php echo $config['covid_estimate'] ?><?php } ?></p>

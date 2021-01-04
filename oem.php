@@ -11,14 +11,14 @@
     include $template['alert'];
 ?>
 
-<div class="grid">
+<div class="grid flex">
     <div class="two-thirds">
         <h1>Information for OEMs</h1>
-        <h4>Give your customers the best experience with elementary OS.</h4>
+        <h4>Give your customers the best experience with elementary&nbsp;OS.</h4>
     </div>
 </div>
 
-<div class="grid">
+<div class="grid flex">
     <div class="two-thirds">
         <h2>Partners &amp; Retailers</h2>
         <p>We offer two ways to be listed as an OEM of elementary OS in <a href="<?php echo $page['lang-root'].'store/'; ?>">our store</a>, with differing requirements and benefits.</p>
@@ -46,9 +46,10 @@
     </div>
 </div>
 
-<div class="grid">
+<div class="grid flex">
     <div class="two-thirds">
         <h2>Resources</h2>
+        <p>Documentation and tips for integrating elementary OS with your hardware.</p>
     </div>
     <div class="two-thirds copy">
         <h3 id="installation">Installation</h3>
@@ -78,7 +79,7 @@
     </div>
 </div>
 
-<div class="grid">
+<div class="grid flex">
     <div class="third">
         <h3>News &amp; Announcements</h3>
         <p>We share frequent updates on development, major announcements, tips for developers, featured apps, and other new content via our Blog.</p>

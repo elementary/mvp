@@ -571,10 +571,6 @@ footer ul li a:focus {
     }
 }
 
-.third h3 {
-    text-align: center;
-}
-
 a.third {
     color: inherit;
 }
@@ -590,6 +586,13 @@ a.third:hover {
     font-size: 32px;
     text-align: center;
     display: block;
+}
+
+.grid.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: left;
 }
 
 /********
