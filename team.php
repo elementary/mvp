@@ -28,7 +28,7 @@ $communities = $cache->remember('team.php@communities', 10, function () use ($sl
 include $template['header'];
 include $template['alert'];
 ?>
-
+<!-- ending php and starting html code -->
 <section class="grid">
     <div class="two-thirds">
         <h1>Meet the Team</h1>
@@ -81,7 +81,8 @@ include $template['alert'];
         <p class="small-label"><i class="fab fa-slack-hash"></i> Powered by Slack</p>
     </div>
 </section>
-
+<!-- End of the html -->
 <?php
 include $template['footer'];
 ?>
+<!-- End of the code -->
