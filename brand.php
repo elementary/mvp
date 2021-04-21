@@ -270,6 +270,32 @@
             </div>
         </div>
         <div class="color-palette-box">
+            <div class="color-palette-header" style="background-color: #cfa25e; color: #3d211b;">
+                <span>Latte</span>
+                <span class="hex" data-l10n-off="1">cfa25e</span>
+            </div>
+            <div class="color-palette-item" style="background-color: #efdfc4; color: #3d211b;">
+                <span>Latte 100</span>
+                <span class="hex" data-l10n-off="1">efdfc4</span>
+            </div>
+            <div class="color-palette-item" style="background-color: #e7c591; color: #3d211b;">
+                <span>Latte 300</span>
+                <span class="hex" data-l10n-off="1">e7c591</span>
+            </div>
+            <div class="color-palette-item" style="background-color: #cfa25e; color: #3d211b;">
+                <span>Latte 500</span>
+                <span class="hex" data-l10n-off="1">cfa25e</span>
+            </div>
+            <div class="color-palette-item" style="background-color: #b6802e; color: #3d211b;">
+                <span>Latte 700</span>
+                <span class="hex" data-l10n-off="1">b6802e</span>
+            </div>
+            <div class="color-palette-item" style="background-color: #804b00;">
+                <span>Latte 900</span>
+                <span class="hex" data-l10n-off="1">804b00</span>
+            </div>
+        </div>
+        <div class="color-palette-box">
             <div class="color-palette-header" style="background-color:#715344;">
                 <span>Cocoa</span>
                 <span class="hex" data-l10n-off="1">715344</span>
@@ -280,7 +306,7 @@
             </div>
             <div class="color-palette-item" style="background-color:#8a715e;">
                 <span>Cocoa 300</span>
-                <span class="hex" data-l10n-off="1">8a715e </span>
+                <span class="hex" data-l10n-off="1">8a715e</span>
             </div>
             <div class="color-palette-item" style="background-color:#715344;">
                 <span>Cocoa 500</span>

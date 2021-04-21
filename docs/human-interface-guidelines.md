@@ -1108,6 +1108,32 @@ Colors do have their connotations, so be cognizant of this when picking them. Fo
     </div>
   </div>
   <div class="color-palette-box">
+    <div class="color-palette-header" style="background-color: #cfa25e; color: #3d211b;">
+      <span>Latte</span>
+      <span>#cfa25e</span>
+    </div>
+    <div class="color-palette-item" style="background-color: #efdfc4; color: #3d211b;">
+      <span>Latte 100</span>
+      <span>#efdfc4</span>
+    </div>
+    <div class="color-palette-item" style="background-color: #e7c591; color: #3d211b;">
+      <span>Latte 300</span>
+      <span>#e7c591</span>
+    </div>
+    <div class="color-palette-item" style="background-color: #cfa25e; color: #3d211b;">
+      <span>Latte 500</span>
+      <span>#cfa25e</span>
+    </div>
+    <div class="color-palette-item" style="background-color: #b6802e; color: #3d211b;">
+      <span>Latte 700</span>
+      <span>#b6802e</span>
+    </div>
+    <div class="color-palette-item" style="background-color: #804b00;">
+      <span>Latte 900</span>
+      <span>#804b00</span>
+    </div>
+  </div>
+  <div class="color-palette-box">
     <div class="color-palette-header" style="background-color:#715344;">
       <span>Cocoa</span>
       <span>#715344</span>
@@ -1118,7 +1144,7 @@ Colors do have their connotations, so be cognizant of this when picking them. Fo
     </div>
     <div class="color-palette-item" style="background-color:#8a715e;">
       <span>Cocoa 300</span>
-      <span>#8a715e </span>
+      <span>#8a715e</span>
     </div>
     <div class="color-palette-item" style="background-color:#715344;">
       <span>Cocoa 500</span>
