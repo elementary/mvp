@@ -5,7 +5,7 @@
   "main": "webpack.config.babel.js",
   "dependencies": {
     "babel-core": "^6.24.1",
-    "babel-loader": "^7.0.0",
+    "babel-loader": "^8.2.2",
     "babel-preset-env": "^1.4.0",
     "core-js": "^3.14.0",
     "glob": "^7.1.7",
