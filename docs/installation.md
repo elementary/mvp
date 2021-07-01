@@ -78,8 +78,11 @@ In order to start the installation process, you must boot your computer from the
 * Press <kbd>F12</kbd> (or the appropriate key) and select the install drive&mdash;usually "USB-HDD" or something containing the word "USB", but the wording may vary. If you choose the incorrect drive, your computer will likely continue to boot as normal. Just restart your computer and pick a different drive in that menu.
 * Shortly after selecting the appropriate boot drive, you should be presented with the elementary OS splash screen. You may now follow the on-screen instructions which will guide you through the rest of the process.
 
-</div>
+## Default LiveCD login credentials
 
+* Enter <kbd>elementary</kbd> as the username and leave the password field blank in order to log into the LiveCD instance
+
+</div>
 
 <div id="install-on-macos" class="slide" markdown="1">
 
