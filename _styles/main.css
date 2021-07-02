@@ -462,36 +462,10 @@ footer ul li a:focus {
     vertical-align: top;
 }
 
-.column.third {
-    margin-bottom: 16px;
-    margin-top: 16px;
-}
-
 @media (min-width: 444px) {
-    .row .column.half {
-        margin: 32px 32px 0;
-        width: calc(50% - 88px);
-    }
-
-    .column.third {
-        margin: 32px 32px 0;
-        width: calc(33% - 88px);
-    }
-
     .column + .column {
         margin-left: 16px !important;
     }
-}
-
-.column.half {
-    text-align: left;
-    vertical-align: middle;
-}
-
-.column img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .row {
@@ -582,14 +556,6 @@ a.third {
 a.third:hover {
     color: #08c;
     fill: #08c;
-}
-
-.third .fa,
-.third .fab,
-.third .far {
-    font-size: 32px;
-    text-align: center;
-    display: block;
 }
 
 /********

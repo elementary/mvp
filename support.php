@@ -75,22 +75,25 @@ include $template['alert'];
         <span>Videos</span>
     </a>
 </div>
-
-<div class="row">
-    <h2>Guides</h2>
-
-    <a class="column third" href="/docs/installation">
-        <i class="fa fa-download"></i>
-        <h3>Installation</h3>
-        <p>Get help installing elementary OS with our step-by-step guide.</p>
-    </a>
-
-    <a class="column third" href="/docs/learning-the-basics">
-        <i class="fa fa-book"></i>
-        <h3>Learning the Basics</h3>
-        <p>Walk through the desktop, multi-tasking, keyboard shortcuts and more.</p>
-    </a>
-</div>
+<section>
+    <div class="grid">
+        <h2>Guides</h2>
+        <a class="third" href="/docs/installation">
+            <h4>
+                <i class="fa fa-download"></i>
+                Installation
+            </h4>
+            <p>Get help installing elementary OS with our step-by-step guide.</p>
+        </a>
+        <a class="third" href="/docs/learning-the-basics">
+            <h4>
+                <i class="fa fa-book"></i>
+                Learning the Basics
+            </h4>
+            <p>Walk through the desktop, multi-tasking, keyboard shortcuts and more</p>
+        </a>
+    </div>
+</section>
 
 <?php
 include $template['footer'];
