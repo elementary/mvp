@@ -11,7 +11,7 @@
     "glob": "^7.1.7",
     "gulp": "^4.0.2",
     "gulp-cached": "^1.1.1",
-    "gulp-changed": "^4.0.2",
+    "gulp-changed": "^4.0.3",
     "gulp-imagemin": "^7.1.0",
     "gulp-postcss": "^8.0.0",
     "gulp-svgo": "^2.2.1",
