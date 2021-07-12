@@ -1,0 +1,27 @@
+<Files ~ "\/(.|_)">
+    Deny from all
+</Files>
+
+<Files ~ "^\/node_modules\/.*">
+    Deny from all
+</Files>
+
+<Files "\.(html|css|js|png|jpg|jpeg|gif|ico|svg|eot|woff|ttf|json)$">
+    ExpiresActive On
+    ExpiresDefault "access plus 1 years"
+</Files>
+
+ErrorDocument 403 /403
+ErrorDocument 404 /404
+ErrorDocument 410 /410
+
+RewriteEngine On
+
+RewriteRule ^/([a-z]{2}(?:_[A-Z]{2})?)/(.*)$ /$2?lang=$1
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^(.*)$ $1/index.php [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
